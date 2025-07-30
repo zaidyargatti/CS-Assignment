@@ -46,49 +46,49 @@ export default function Login() {
                     </div>
 
                     <form onSubmit={handleSubmit} className="mt-6 space-y-6">
-                       {/* Email */}
-<div className="relative w-full">
-  <input
-    type="email"
-    id="email"
-    value={email}
-    onChange={(e) => setEmail(e.target.value)}
-    placeholder=" "
-    required
-    className="peer w-full appearance-none rounded-lg border border-gray-400 bg-white px-2.5 pt-4 pb-2.5 text-sm text-gray-900 focus:outline-none focus:ring-0 focus:border-gray-400"
-  />
-  <label
-    htmlFor="email"
-    className="absolute left-2 top-1/2 z-10 origin-[0] -translate-y-1/2 scale-100 transform bg-white px-1 text-sm text-gray-500 transition-all duration-200
+                        {/* Email */}
+                        <div className="relative w-full">
+                            <input
+                                type="email"
+                                id="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                placeholder=" "
+                                required
+                                className="peer w-full appearance-none rounded-lg border border-gray-400 bg-white px-2.5 pt-4 pb-2.5 text-sm text-gray-900 focus:outline-none focus:ring-0 focus:border-gray-400"
+                            />
+                            <label
+                                htmlFor="email"
+                                className="absolute left-2 top-1/2 z-10 origin-[0] -translate-y-1/2 scale-100 transform bg-white px-1 text-sm text-gray-500 transition-all duration-200
     peer-placeholder-shown:top-1/2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2
     peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4
     peer-valid:top-2 peer-valid:scale-75 peer-valid:-translate-y-4"
-  >
-    Email
-  </label>
-</div>
+                            >
+                                Email
+                            </label>
+                        </div>
 
-{/* Password */}
-<div className="relative w-full mt-4">
-  <input
-    type="password"
-    id="password"
-    value={password}
-    onChange={(e) => setPassword(e.target.value)}
-    placeholder=" "
-    required
-    className="peer w-full appearance-none rounded-lg border border-gray-400 bg-white px-2.5 pt-4 pb-2.5 text-sm text-gray-900 focus:outline-none focus:ring-0 focus:border-gray-400"
-  />
-  <label
-    htmlFor="password"
-    className="absolute left-2 top-1/2 z-10 origin-[0] -translate-y-1/2 scale-100 transform bg-white px-1 text-sm text-gray-500 transition-all duration-200
+                        {/* Password */}
+                        <div className="relative w-full mt-4">
+                            <input
+                                type="password"
+                                id="password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                placeholder=" "
+                                required
+                                className="peer w-full appearance-none rounded-lg border border-gray-400 bg-white px-2.5 pt-4 pb-2.5 text-sm text-gray-900 focus:outline-none focus:ring-0 focus:border-gray-400"
+                            />
+                            <label
+                                htmlFor="password"
+                                className="absolute left-2 top-1/2 z-10 origin-[0] -translate-y-1/2 scale-100 transform bg-white px-1 text-sm text-gray-500 transition-all duration-200
     peer-placeholder-shown:top-1/2 peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2
     peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4
     peer-valid:top-2 peer-valid:scale-75 peer-valid:-translate-y-4"
-  >
-    Password
-  </label>
-</div>
+                            >
+                                Password
+                            </label>
+                        </div>
 
 
                         {error && <div className="text-sm text-red-600 font-medium">{error}</div>}
@@ -102,20 +102,7 @@ export default function Login() {
                         </button>
                     </form>
 
-                    {/* Divider + Google login */}
-                    <div className="flex items-center justify-center gap-4 pt-4">
-                        <div className="text-sm text-gray-400">or</div>
-                    </div>
-
-                    <div className="flex justify-center mt-2">
-                        <button
-                            type="button"
-                            className="p-2 border rounded-full hover:bg-gray-100 transition"
-                            title="Login with Google"
-                        >
-                            <FcGoogle size={24} />
-                        </button>
-                    </div>
+                    
                 </div>
 
                 {/* Right Side - Image */}
